@@ -1,4 +1,4 @@
-package com.example.sportstrainer.adapter
+package com.example.sportstrainer.ui.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -8,7 +8,6 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.sportstrainer.R
 import com.example.sportstrainer.data.SportsDataSource
-import com.example.sportstrainer.model.Sport
 
 class SportCardAdapter(): RecyclerView.Adapter<SportCardAdapter.SportCardViewHolder>() {
 

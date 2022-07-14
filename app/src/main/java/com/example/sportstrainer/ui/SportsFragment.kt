@@ -1,4 +1,4 @@
-package com.example.sportstrainer
+package com.example.sportstrainer.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,7 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.sportstrainer.adapter.SportCardAdapter
+import com.example.sportstrainer.R
+import com.example.sportstrainer.ui.adapter.SportCardAdapter
 
 
 // TODO: Rename parameter arguments, choose names that match
