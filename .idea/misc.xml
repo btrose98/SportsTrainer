@@ -3,22 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Android Kotlin Course/SportsTrainerProject/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2825" />
-        <entry key="..\:/Android Kotlin Course/SportsTrainerProject/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
-        <entry key="..\:/Android Kotlin Course/SportsTrainerProject/app/src/main/res/layout/fragment_select_sport_start.xml" value="0.358695652173913" />
-        <entry key="..\:/Android Kotlin Course/SportsTrainerProject/app/src/main/res/layout/fragment_skill.xml" value="0.3" />
-        <entry key="..\:/Android Kotlin Course/SportsTrainerProject/app/src/main/res/layout/fragment_skills.xml" value="0.2930253623188406" />
-        <entry key="..\:/Android Kotlin Course/SportsTrainerProject/app/src/main/res/layout/fragment_sport.xml" value="0.358695652173913" />
-        <entry key="..\:/Android Kotlin Course/SportsTrainerProject/app/src/main/res/layout/fragment_sports.xml" value="0.23255813953488372" />
-        <entry key="..\:/Android Kotlin Course/SportsTrainerProject/app/src/main/res/layout/fragment_workout.xml" value="0.358695652173913" />
-        <entry key="..\:/Android Kotlin Course/SportsTrainerProject/app/src/main/res/layout/fragment_workouts.xml" value="0.2930253623188406" />
-        <entry key="..\:/Android Kotlin Course/SportsTrainerProject/app/src/main/res/layout/grid_view_sport_item.xml" value="0.18697916666666667" />
-        <entry key="..\:/Android Kotlin Course/SportsTrainerProject/app/src/main/res/layout/navigation.xml" value="0.358695652173913" />
         <entry key="..\:/Projects/Android/SportsTrainer/app/src/main/res/layout/activity_main.xml" value="0.22327898550724637" />
+        <entry key="..\:/Projects/Android/SportsTrainer/app/src/main/res/layout/fragment_sports.xml" value="0.14479166666666668" />
+        <entry key="..\:/Projects/Android/SportsTrainer/app/src/main/res/layout/grid_view_sport_item.xml" value="0.3359375" />
+        <entry key="..\:/Users/Bradley/Desktop/Personal/SportsTrainer/SportsTrainer/app/src/main/res/layout/activity_main.xml" value="0.1" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

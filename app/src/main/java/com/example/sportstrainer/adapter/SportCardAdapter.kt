@@ -10,7 +10,7 @@ import com.example.sportstrainer.R
 import com.example.sportstrainer.data.SportsDataSource
 import com.example.sportstrainer.model.Sport
 
-class SportCardAdapter(private val dataset: List<Sport>): RecyclerView.Adapter<SportCardAdapter.SportCardViewHolder>() {
+class SportCardAdapter(): RecyclerView.Adapter<SportCardAdapter.SportCardViewHolder>() {
 
     // Initialize the data using the List found in data/DataSource
     private val sportList = SportsDataSource.sports
@@ -30,13 +30,13 @@ class SportCardAdapter(private val dataset: List<Sport>): RecyclerView.Adapter<S
     }
     override fun onBindViewHolder(holder: SportCardViewHolder, position: Int) {
         // Get the data at the current position
-        var sport = dataset[position]
+        var sport = sportList[position]
         // Set the image resource for the current sport
         holder.sportImage.setImageResource(sport.imageResourceId)
         // Set the text for the current sport's name
         holder.sportName.text = sport.name
     }
 
-    override fun getItemCount(): Int = dataset.size
+    override fun getItemCount(): Int = sportList.size
 
 }
