@@ -7,7 +7,7 @@
     <data>
         <variable
             name="sportFragment"
-            type="com.example.sportstrainer.SportFragment" />
+            type="com.example.sportstrainer.SportsFragment" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
