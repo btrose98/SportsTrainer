@@ -15,7 +15,7 @@
     </fragment>
     <fragment
         android:id="@+id/skills"
-        android:name="com.example.sportstrainer.skills"
+        android:name="com.example.sportstrainer.SkillsFragment"
         android:label="fragment_skills"
         tools:layout="@layout/fragment_skills" >
         <action
@@ -24,7 +24,7 @@
     </fragment>
     <fragment
         android:id="@+id/workouts"
-        android:name="com.example.sportstrainer.workouts"
+        android:name="com.example.sportstrainer.WorkoutsFragment"
         android:label="fragment_workouts"
         tools:layout="@layout/fragment_workouts" />
 </navigation>
