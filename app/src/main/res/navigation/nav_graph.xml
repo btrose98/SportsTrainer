@@ -6,7 +6,7 @@
     app:startDestination="@id/sports">
     <fragment
         android:id="@+id/sports"
-        android:name="com.example.sportstrainer.sports"
+        android:name="com.example.sportstrainer.SportsFragment"
         android:label="fragment_sports"
         tools:layout="@layout/fragment_sports" >
         <action
