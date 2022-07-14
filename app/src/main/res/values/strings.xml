@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">SportsTrainer</string>
+    <string name="Sports">Sports</string>
+    <string name="Hockey">Hockey</string>
+    <string name="Basketball">Basketball</string>
+    <string name="Soccer">Soccer</string>
+    <string name="Volleyball">Volleyball</string>
 </resources>

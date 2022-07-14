@@ -2,6 +2,7 @@ package com.example.sportstrainer
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.TextView
 import androidx.activity.viewModels
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.lifecycleScope
@@ -9,30 +10,42 @@ import com.example.sportstrainer.databinding.ActivityMainBinding
 import com.example.sportstrainer.ui.viewmodel.MainViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collectLatest
+import androidx.navigation.NavController
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.setupActionBarWithNavController
+
 
 @AndroidEntryPoint
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(R.layout.activity_main) {
 
-    private lateinit var binding: ActivityMainBinding
     private val viewModel: MainViewModel by viewModels()
+
+    private lateinit var navController: NavController
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
 
-        binding.button.setOnClickListener {
-            viewModel.triggerStateFlow()
-        }
 
-        subscribeToObservables()
+        val navHostFragment = supportFragmentManager
+            .findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+
+        navController = navHostFragment.navController
+
+        setupActionBarWithNavController(navController)
+
+//        subscribeToObservables()
     }
 
-    private fun subscribeToObservables() {
-        lifecycleScope.launchWhenStarted {
-            viewModel.stateFlow.collectLatest {
-                binding.textView.text = it
-            }
-        }
+    override fun onSupportNavigateUp(): Boolean {
+        return navController.navigateUp() || super.onSupportNavigateUp()
     }
+
+//    private fun subscribeToObservables() {
+//        val textView = findViewById<TextView>(R.id.textView)
+//        lifecycleScope.launchWhenStarted {
+//            viewModel.stateFlow.collectLatest {
+//                textView.text = it
+//            }
+//        }
+//    }
 }

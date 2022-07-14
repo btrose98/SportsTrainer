@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/sports">
+    <fragment
+        android:id="@+id/sports"
+        android:name="com.example.sportstrainer.ui.SportsFragment"
+        android:label="fragment_sports"
+        tools:layout="@layout/fragment_sports" >
+        <action
+            android:id="@+id/action_sports_to_skills"
+            app:destination="@id/skills" />
+    </fragment>
+    <fragment
+        android:id="@+id/skills"
+        android:name="com.example.sportstrainer.ui.SkillsFragment"
+        android:label="fragment_skills"
+        tools:layout="@layout/fragment_skills" >
+        <action
+            android:id="@+id/action_skills_to_workouts"
+            app:destination="@id/workouts" />
+    </fragment>
+    <fragment
+        android:id="@+id/workouts"
+        android:name="com.example.sportstrainer.ui.WorkoutsFragment"
+        android:label="fragment_workouts"
+        tools:layout="@layout/fragment_workouts" />
+</navigation>
