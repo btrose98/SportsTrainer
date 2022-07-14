@@ -10,10 +10,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.sportstrainer.R
 import com.example.sportstrainer.ui.adapter.SportCardAdapter
 
-
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-
 /**
  * A simple [Fragment] subclass.
  * Use the [sports.newInstance] factory method to

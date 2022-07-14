@@ -23,7 +23,7 @@ class SportCardAdapter(): RecyclerView.Adapter<SportCardAdapter.SportCardViewHol
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SportCardViewHolder {
         // Inflate the layout
         var adapterLayout: View =
-            LayoutInflater.from(parent.context).inflate(R.layout.grid_view_sport_item, parent, false)
+            LayoutInflater.from(parent.context).inflate(R.layout.grid_view_card_item, parent, false)
 
         return SportCardViewHolder(adapterLayout)
     }

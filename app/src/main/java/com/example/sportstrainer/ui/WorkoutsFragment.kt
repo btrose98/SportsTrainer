@@ -7,13 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.sportstrainer.R
 
-
 /**
  * A simple [Fragment] subclass.
- * Use the [skills.newInstance] factory method to
+ * Use the [workouts.newInstance] factory method to
  * create an instance of this fragment.
  */
-class SkillsFragment : Fragment() {
+class WorkoutsFragment : Fragment() {
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,7 +24,7 @@ class SkillsFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_skills, container, false)
+        return inflater.inflate(R.layout.fragment_workouts, container, false)
     }
 
 }
