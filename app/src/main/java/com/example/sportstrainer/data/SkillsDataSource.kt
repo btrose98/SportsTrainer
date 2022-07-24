@@ -5,7 +5,7 @@ import com.example.sportstrainer.model.Skill
 
 object SkillsDataSource {
     val hockeySkills: List<Skill> = listOf(
-        Skill(1, "Skating", R.drawable.skating),
-        Skill(2, "Stick handling", R.drawable.stickhandle),
+        Skill(1, "Skating", R.drawable.skill_skating),
+        Skill(2, "Stick handling", R.drawable.skill_stickhandle),
     )
 }
