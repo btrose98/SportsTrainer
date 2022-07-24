@@ -6,12 +6,14 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.navigation.fragment.NavHostFragment.Companion.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.sportstrainer.R
 import com.example.sportstrainer.data.SportsDataSource
 import com.example.sportstrainer.model.Sport
+import com.example.sportstrainer.ui.SportsFragment
 
-class SportCardAdapter(private val onItemClicked: (Sport) -> Unit): RecyclerView.Adapter<SportCardAdapter.SportCardViewHolder>() {
+class SportCardAdapter(val fragment: SportsFragment, private val onItemClicked: (Sport) -> Unit): RecyclerView.Adapter<SportCardAdapter.SportCardViewHolder>() {
 
     private val sportList = SportsDataSource.sports
 
@@ -34,6 +36,9 @@ class SportCardAdapter(private val onItemClicked: (Sport) -> Unit): RecyclerView
 
         holder.itemView.setOnClickListener {
             onItemClicked(sport)
+            findNavController(fragment).navigate(
+                R.id.action_sports_to_skills
+            )
             Log.d("sportscardadapter", "${sport.name} was clicked")
         }
     }

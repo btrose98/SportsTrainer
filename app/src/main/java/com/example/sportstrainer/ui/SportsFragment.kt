@@ -38,7 +38,7 @@ class SportsFragment : Fragment() {
 
         recyclerView = view.findViewById(R.id.grid_recycler_view)
         recyclerView.layoutManager = GridLayoutManager(context,2)
-        recyclerView.adapter = SportCardAdapter {
+        recyclerView.adapter = SportCardAdapter(this) {
             sportsViewModel.updateCurrentSport(it)
         }
     }
