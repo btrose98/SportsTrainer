@@ -7,6 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.sportstrainer.R
+import com.example.sportstrainer.data.SkillsDataSource
 import com.example.sportstrainer.data.SportsDataSource
 
 class SportCardAdapter(): RecyclerView.Adapter<SportCardAdapter.SportCardViewHolder>() {
@@ -16,8 +17,8 @@ class SportCardAdapter(): RecyclerView.Adapter<SportCardAdapter.SportCardViewHol
 
     class SportCardViewHolder(view: View?): RecyclerView.ViewHolder(view!!) {
         // Declare and initialize all of the list item UI components
-        val sportImage: ImageView = view!!.findViewById(R.id.imageView)
-        val sportName: TextView = view!!.findViewById(R.id.sportName)
+        val cardImage: ImageView = view!!.findViewById(R.id.cardImageView)
+        val cardName: TextView = view!!.findViewById(R.id.cardItemTitle)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SportCardViewHolder {
@@ -31,9 +32,9 @@ class SportCardAdapter(): RecyclerView.Adapter<SportCardAdapter.SportCardViewHol
         // Get the data at the current position
         var sport = sportList[position]
         // Set the image resource for the current sport
-        holder.sportImage.setImageResource(sport.imageResourceId)
+        holder.cardImage.setImageResource(sport.imageResourceId)
         // Set the text for the current sport's name
-        holder.sportName.text = sport.name
+        holder.cardName.text = sport.name
     }
 
     override fun getItemCount(): Int = sportList.size
