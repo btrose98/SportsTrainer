@@ -16,6 +16,6 @@ class SportsViewModel : ViewModel() {
 
     fun updateCurrentSport(sport: Sport) {
         _currentSport.value = sport
-        Log.d("sportsviewmodel", "current sport updated to: ${sport.name}")
+        Log.d("sportsviewmodel", "current sport in viewmodel updated to: ${sport.name}")
     }
 }

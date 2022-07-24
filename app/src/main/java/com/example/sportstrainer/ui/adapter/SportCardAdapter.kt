@@ -6,12 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.sportstrainer.R
 import com.example.sportstrainer.data.SportsDataSource
 import com.example.sportstrainer.model.Sport
-import kotlin.coroutines.coroutineContext
 
 class SportCardAdapter(private val onItemClicked: (Sport) -> Unit): RecyclerView.Adapter<SportCardAdapter.SportCardViewHolder>() {
 
@@ -41,5 +39,4 @@ class SportCardAdapter(private val onItemClicked: (Sport) -> Unit): RecyclerView
     }
 
     override fun getItemCount(): Int = sportList.size
-
 }
