@@ -5,10 +5,14 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.activityViewModels
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.sportstrainer.R
+import com.example.sportstrainer.ui.adapter.SkillsCardAdapter
 import com.example.sportstrainer.ui.adapter.SportCardAdapter
+import com.example.sportstrainer.ui.viewmodel.SkillsViewModel
+import com.example.sportstrainer.ui.viewmodel.SportsViewModel
 
 
 /**
@@ -19,6 +23,7 @@ import com.example.sportstrainer.ui.adapter.SportCardAdapter
 class SkillsFragment : Fragment() {
 
     private lateinit var recyclerView: RecyclerView
+    private val skillsViewModel: SkillsViewModel by activityViewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,6 +43,8 @@ class SkillsFragment : Fragment() {
 
         recyclerView = view.findViewById(R.id.grid_recycler_view)
         recyclerView.layoutManager = GridLayoutManager(context,2)
-//        recyclerView.adapter = SportCardAdapter()
+        recyclerView.adapter = SkillsCardAdapter(this){
+            skillsViewModel.updateCurrentSkill(it)
+        }
     }
 }
